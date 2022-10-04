@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'vcr_osd_monoregular';
+    src: url('../assets/font/vcr_osd_mono_1.001-webfont.woff2') format('woff2'),
+         url('../assets/font/vcr_osd_mono_1.001-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#mesario{
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 70%;
+    height: 600px;
+    display: block;
+    float: left;
+    background-color: #b5b4b2;
+}
+#mesario #top{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+#mesario #top #diplay{
+    width: 80%;
+    height: 150px;
+    margin-left: 10%;
+    margin-top: 25px;
+    display: block;
+    float: left;
+    background-color: #7f897f;
+}
