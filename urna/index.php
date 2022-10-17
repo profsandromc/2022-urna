@@ -6,20 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urna</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css?v=<?php echo date('YmdHis') . rand(0, 9999); ?>">
 </head>
 
 <body>
-    <div>
-        <audio id="fim" controls>
-            <source src="../assets/mp3/som-fim.mp3" type="audio/mpeg">
-        </audio>
-        <audio id="confirma" controls>
-            <source src="../assets/mp3/som-confirma.mp3" type="audio/mpeg">
-        </audio>
-    </div>
     <div id="urna">
-        <div id="tela"></div>
+        <div id="tela">
+            <input type="text" id="telaAtual" value="bloqueio">
+            <h1 class="txtGrande">BLOQUEADO</h1>
+        </div>
         <div id="aside">
             <div id="justica">
                 <img src="../assets/img/logo-justica-eleitoral-senac.png">
@@ -47,28 +42,15 @@
                 <div class="linha-maior">
                     <button id="btnBranco">BRANCO</button>
                     <button id="btnCorrige" onclick="somConfirma();">CORRIGE</button>
-                    <button id="btnConfirma" onclick="somFim();">CONFIRMA</button>
+                    <button id="btnConfirma">CONFIRMA</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
-
-
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-    </div>
-</div>
-<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-<script>
-new window.VLibras.Widget('https://vlibras.gov.br/app');
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-</script>
-<script src="script.js"></script>
 
 </html>

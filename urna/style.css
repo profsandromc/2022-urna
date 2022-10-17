@@ -1,11 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font: 80% "arial", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: #666;
-}
-audio{
-    display: none;
 }
 #urna{
     width: 90%;
@@ -28,6 +25,14 @@ audio{
     -webkit-box-shadow: 0px 0px 0px 2px #A0A0A0;
     box-shadow: 0px 0px 0px 2px #A0A0A0;
 }
+#urna #tela .txtGrande{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 100px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25%;
+}
+
 #urna #aside{
     width: 30%;
     margin-top: 50px;

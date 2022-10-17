@@ -1,0 +1,36 @@
+// abre o arquivo de votos cria array de dados
+$fp = fopen('votos.txt', 'r');
+$row = 0;
+while ($line = fgetcsv($fp, 1000, ",")) {
+if ($row++ == 0) {
+continue;
+}
+$data[] = [
+$line[0],
+$line[1],
+$line[2],
+$line[3],
+$line[4],
+$line[5],
+$line[6]
+];
+}
+fclose($fp);
+
+
+// adiciona novo elemento
+array_push($data, $voto['eleitor'] . ';' . $voto['votos'][0] . ';' . $voto['votos'][1] . ';' . $voto['votos'][2] . ';' . $voto['votos'][3] . ';' . $voto['votos'][4]);
+
+// grava registros
+$fp = fopen('votos.txt', 'w');
+foreach ($data as $line) {
+$val = explode(";", $line);
+fputcsv($fp, $val);
+}
+fclose($fp);
+
+
+echo '
+<pre>';
+print_r($_SESSION);
+echo '</pre>';
