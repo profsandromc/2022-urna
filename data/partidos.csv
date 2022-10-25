@@ -1,11 +1,8 @@
 COD,NOME,SIGLA,NUMERO,PRESIDENTE
 1,Partido Musical,PMU,81,Theo Joaquim Anthony Jesus
 2,Partido dos Esportes,PES,82,Sara Benedita Aline
-3,Partido das Festas,PFE,83,Ruan Hugo Roberto Caldeira
-4,Partido das Profissões,PPR,84,Tiago Renato Fábio Silva
-5,Partido dos Animes,PAN,85,Vitor Miguel Anderson Gomes
-6,Partido dos Personagens de Filmes e Séries, PPDS,86,Malu Cecília Teresinha
-7,Partido Literário, PLIT,87,Priscila Isabel
-8,Partido do Folclore,PFOL,88,Hugo Kevin Juan Almada
-9,Partido dos Games, PGAM,89,Cláudia Bárbara
-10,Partido da Tecnologia da Informação, PTI,Luiz Erick
+3,Partido das Profissões,PPR,83,Tiago Renato Fábio Silva
+4,Partido dos Animes,PAN,84,Vitor Miguel Anderson Gomes
+5,Partido dos Personagens Literário, Filmes e Séries, PPLFS,85,Malu Cecília Teresinha
+6,Partido dos Games, PGAM,86,Cláudia Bárbara
+7,Partido da Tecnologia da Informação, PTI,87,Luiz Erick
